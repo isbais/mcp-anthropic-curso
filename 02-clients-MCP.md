@@ -3,19 +3,22 @@
 
 > El **MCP client** sirve como el puente de comunicación entre tu servidor y los **MCP servers**. Es tu punto de acceso a todas las **tools** que un **MCP server** proporciona, manejando el intercambio de mensajes y los detalles del protocolo para que tu aplicación no tenga que hacerlo.
 
-![MCP Client Bridge](images/mcp-transport.png)
+
 
 ## 🌐 Comunicación Transport-Agnostic
 
 Una de las fortalezas clave de **MCP** es ser **transport agnostic** - una forma elegante de decir que el **client** y **server** pueden comunicarse a través de diferentes protocolos dependiendo de tu configuración.
 
-![Transport Options](images/mcp-transport-2.png)
+![MCP Client Bridge](images/mcp-transport.png)
+
 
 La configuración más común ejecuta tanto el **MCP client** como el **server** en la misma máquina, comunicándose a través de **standard input/output**. Pero también puedes conectarlos a través de:
 
 - 🌐 **HTTP**
 - 🔄 **WebSockets**
 - 🔌 Varios otros protocolos de red
+
+![Transport Options](images/mcp-transport-2.png)
 
 ## 📨 Tipos de Mensajes MCP
 
